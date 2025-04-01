@@ -70,7 +70,7 @@ const HomeScreen = () => {
         </View>
         <TouchableOpacity style={styles.button} onPress={() => {
             setSelectedDate(currentDate);
-            router.replace("/edit", {});
+            router.replace("/calculate", {});
         }}>
             <Text style={styles.buttonText}>Sélectionner</Text>
         </TouchableOpacity>

@@ -1,40 +1,57 @@
-import { View, Text } from 'react-native';
-import { StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { ScrollView } from "react-native-gesture-handler";
 
-export default function Plats({ plats = [], handleSelect, select }) {
-    const styles = StyleSheet.create({
-        basic: {
-            backgroundColor: "lightblue",
-            borderWidth: 2,
-            borderStyle: "solid",
-            justifyContent: "space-between",
-            margin: 2,
-            width: 150,
-            height: 200,
-            padding: 10,
-            borderRadius: 10,
-            alignItems: "center",
-            cursor: "pointer",
-        },
-        active: {
-            borderColor: "orange",
-        },
-    });
-    
+export default function Plats({ plats = [], handleSelect, select }) {      
     return(
-        <ScrollView horizontal={true} style={{paddingLeft: 10}}>
+        <ScrollView horizontal={true} style={styles.scrollContainer}>
             {Array.isArray(plats) && plats.map((plat) => (
-                <View style={{backgroundColor: "white", padding: 10}}>
-                    <View key={plat.id}
-                    style={[styles.basic, select.includes(plat.id) && styles.active]} onClick={() => handleSelect(plat.id)}>
-                        <Text>{plat.nom}, {"\n"}</Text>
-                        <Text>
-                            {plat.points} point(s).
-                        </Text>
+                <TouchableOpacity key={plat.id} onPress={() => handleSelect(plat.id)} activeOpacity={1}>
+                    <View style={[styles.card, select.includes(plat.id) && styles.active]}>
+                        <Text style={styles.title}>{plat.nom}</Text>
+                        <Text style={styles.points}>{plat.points} point(s)</Text>
                     </View>
-                </View>
+                </TouchableOpacity>
             ))}
         </ScrollView>
-    )
+    );
 }
+
+const styles = StyleSheet.create({
+    scrollContainer: {
+        paddingLeft: 10,
+    },
+    card: {
+        backgroundColor: "#fff",
+        borderWidth: 2,
+        borderColor: "#ddd",
+        borderRadius: 10,
+        padding: 15,
+        margin: 5,
+        width: 200,
+        height: 200,
+        alignItems: "center",
+        justifyContent: "center",
+        shadowColor: "#000",
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.1,
+        shadowRadius: 4,
+        elevation: 3,
+    },
+    active: {
+        borderColor: "#4bb84b",
+        borderWidth: 3,
+        shadowColor: "#4bb84b"
+    },
+    title: {
+        fontSize: 14,
+        fontWeight: "bold",
+        textAlign: "center",
+        color: "#333",
+        marginBottom: 5,
+        width: "100%",
+    },
+    points: {
+        fontSize: 13,
+        color: "#00796b"
+    },
+});

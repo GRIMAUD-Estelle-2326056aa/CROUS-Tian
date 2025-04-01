@@ -1,14 +1,23 @@
 import { Stack } from "expo-router";
-import { Image } from "react-native";
-import { DateProvider } from "./context/Context";
+import { Image, Text, StyleSheet } from "react-native";
+import { DateProvider, useDate } from "./context/Context";
 
 export default function RootLayout() {
   
   return (
     <DateProvider>
-      <Stack
+      <Header/>
+    </DateProvider>
+  );
+}
+
+function Header() {
+  const { selectedDate } = useDate();
+
+  return (
+    <Stack
         screenOptions={{
-          // Utilisation de l'image comme titre
+          
           headerTitle: () => (
             <Image
               source={require("../assets/images/logo.png")}
@@ -19,10 +28,16 @@ export default function RootLayout() {
         }}
       >
         <Stack.Screen
-          name="edit/index"
-          options={{ headerTitle: "Edit" }}
+          name="calculate/index"
+          options={{ headerTitle: () =>(
+          <Text style={styles.dayTitle}>{selectedDate}</Text>),
+          headerTitleAlign: "center",
+        }}
         />
       </Stack>
-    </DateProvider>
   );
 }
+
+const styles = StyleSheet.create({
+  dayTitle: { fontWeight: "bold", fontSize: 22, textAlign: "center", marginBottom: 15, color: "#333" },
+});
