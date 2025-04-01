@@ -1,0 +1,670 @@
+{
+    "jour":
+    {
+        "Lundi 31/03/25": [
+            {
+                "entree": [
+                    {
+                        "point": 1,
+                        "choix": [
+                            "idEntree1",
+                            "idEntree2",
+                            "idEntree3"
+                        ]
+                    }
+                ]
+            },
+            {
+                "plats": [
+                    {
+                        "nom": "Plat du Jour",
+                        "point": 4,
+                        "plat": [
+                            {
+                                "principal": [
+                                    "idPrincipal1",
+                                    "idPrincipal2",
+                                    "idPrincipal3"
+                                ],
+                                "accompagnement": [
+                                    "idAccompagnement1",
+                                    "idAccompagnement2"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nom": "Grillades",
+                        "point": 4,
+                        "plat": [
+                            {
+                                "principal": [
+                                    "idPrincipal4",
+                                    "idPrincipal5",
+                                    "idPrincipal6"
+                                ],
+                                "accompagnement": [
+                                    "idAccompagnement3",
+                                    "idAccompagnement4"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nom": "Pizza",
+                        "point": 5,
+                        "plat": [
+                            {
+                                "principal": [
+                                    "idPrincipal7"
+                                ],
+                                "accompagnement": []
+                            }
+                        ]
+                    },
+                    {
+                        "nom": "Pâtes",
+                        "point": 4,
+                        "plat": [
+                            {
+                                "principal": [
+                                    "idPrincipal8"
+                                ],
+                                "accompagnement": []
+                            }
+                        ]
+                    },
+                    {
+                        "nom": "Plat Végétarien",
+                        "point": 4,
+                        "plat": [
+                            {
+                                "principal": [
+                                    "idPrincipal9",
+                                    "idPrincipal10",
+                                    "idPrincipal11"
+                                ],
+                                "accompagnement": [
+                                    "idAccompagnement5",
+                                    "idAccompagnement6"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "dessert": [
+                    "idDessert1",
+                    "idDessert2",
+                    "idDessert3",
+                    "idDessert4",
+                    "idDessert5"
+                ]
+            }
+        ],
+        "Mardi 01/04/25": [
+            {
+                "entree": [
+                    {
+                        "point": 1,
+                        "choix": [
+                            "idEntree4",
+                            "idEntree5",
+                            "idEntree6"
+                        ]
+                    }
+                ]
+            },
+            {
+                "plats": [
+                    {
+                        "nom": "Plat du Jour",
+                        "point": 4,
+                        "plat": [
+                            {
+                                "principal": [
+                                    "idPrincipal1",
+                                    "idPrincipal2",
+                                    "idPrincipal3"
+                                ],
+                                "accompagnement": [
+                                    "idAccompagnement1",
+                                    "idAccompagnement2"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nom": "Grillades",
+                        "point": 4,
+                        "plat": [
+                            {
+                                "principal": [
+                                    "idPrincipal4",
+                                    "idPrincipal5",
+                                    "idPrincipal6"
+                                ],
+                                "accompagnement": [
+                                    "idAccompagnement3",
+                                    "idAccompagnement4"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nom": "Pizza",
+                        "point": 5,
+                        "plat": [
+                            {
+                                "principal": [
+                                    "idPrincipal7"
+                                ],
+                                "accompagnement": []
+                            }
+                        ]
+                    },
+                    {
+                        "nom": "Pâtes",
+                        "point": 4,
+                        "plat": [
+                            {
+                                "principal": [
+                                    "idPrincipal8"
+                                ],
+                                "accompagnement": []
+                            }
+                        ]
+                    },
+                    {
+                        "nom": "Plat Végétarien",
+                        "point": 4,
+                        "plat": [
+                            {
+                                "principal": [
+                                    "idPrincipal9",
+                                    "idPrincipal10",
+                                    "idPrincipal11"
+                                ],
+                                "accompagnement": [
+                                    "idAccompagnement5",
+                                    "idAccompagnement6"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "dessert": [
+                    "idDessert1",
+                    "idDessert2",
+                    "idDessert3",
+                    "idDessert4",
+                    "idDessert5"
+                ]
+            }
+        ],
+        "Mercredi 02/04/25": [
+            {
+                "entree": [
+                    {
+                        "point": 1,
+                        "choix": [
+                            "idEntree7",
+                            "idEntree1",
+                            "idEntree2"
+                        ]
+                    }
+                ]
+            },
+            {
+                "plats": [
+                    {
+                        "nom": "Plat du Jour",
+                        "point": 4,
+                        "plat": [
+                            {
+                                "principal": [
+                                    "idPrincipal1",
+                                    "idPrincipal2",
+                                    "idPrincipal3"
+                                ],
+                                "accompagnement": [
+                                    "idAccompagnement1",
+                                    "idAccompagnement2"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nom": "Grillades",
+                        "point": 4,
+                        "plat": [
+                            {
+                                "principal": [
+                                    "idPrincipal4",
+                                    "idPrincipal5",
+                                    "idPrincipal6"
+                                ],
+                                "accompagnement": [
+                                    "idAccompagnement3",
+                                    "idAccompagnement4"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nom": "Pizza",
+                        "point": 5,
+                        "plat": [
+                            {
+                                "principal": [
+                                    "idPrincipal7"
+                                ],
+                                "accompagnement": []
+                            }
+                        ]
+                    },
+                    {
+                        "nom": "Pâtes",
+                        "point": 4,
+                        "plat": [
+                            {
+                                "principal": [
+                                    "idPrincipal8"
+                                ],
+                                "accompagnement": []
+                            }
+                        ]
+                    },
+                    {
+                        "nom": "Plat Végétarien",
+                        "point": 4,
+                        "plat": [
+                            {
+                                "principal": [
+                                    "idPrincipal9",
+                                    "idPrincipal10",
+                                    "idPrincipal11"
+                                ],
+                                "accompagnement": [
+                                    "idAccompagnement5",
+                                    "idAccompagnement6"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "dessert": [
+                    "idDessert1",
+                    "idDessert2",
+                    "idDessert3",
+                    "idDessert4",
+                    "idDessert5"
+                ]
+            }
+        ],
+        "Jeudi 03/04/25": [
+            {
+                "entree": [
+                    {
+                        "point": 1,
+                        "choix": [
+                            "idEntree4",
+                            "idEntree2"
+                        ]
+                    }
+                ]
+            },
+            {
+                "plats": [
+                    {
+                        "nom": "Plat du Jour",
+                        "point": 4,
+                        "plat": [
+                            {
+                                "principal": [
+                                    "idPrincipal5",
+                                    "idPrincipal7"
+                                ],
+                                "accompagnement": [
+                                    "idAccompagnement5",
+                                    "idAccompagnement3"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nom": "Grillades",
+                        "point": 4,
+                        "plat": [
+                            {
+                                "principal": [
+                                    "idPrincipal6"
+                                ],
+                                "accompagnement": [
+                                    "idAccompagnement3",
+                                    "idAccompagnement5"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nom": "Pizza",
+                        "point": 5,
+                        "plat": [
+                            {
+                                "principal": [
+                                    "idPrincipal12"
+                                ],
+                                "accompagnement": []
+                            }
+                        ]
+                    },
+                    {
+                        "nom": "Pâtes",
+                        "point": 4,
+                        "plat": [
+                            {
+                                "principal": [
+                                    "idPrincipal13"
+                                ],
+                                "accompagnement": []
+                            }
+                        ]
+                    },
+                    {
+                        "nom": "Plat Végétarien",
+                        "point": 4,
+                        "plat": [
+                            {
+                                "principal": [
+                                    "idPrincipal11"
+                                ],
+                                "accompagnement": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "dessert": [
+                    "idDessert2",
+                    "idDessert3",
+                    "idDessert5"
+                ]
+            }
+        ],
+        "Vendredi 04/04/25": [
+            {
+                "entree": [
+                    {
+                        "point": 1,
+                        "choix": [
+                            "idEntree1",
+                            "idEntree5"
+                        ]
+                    }
+                ]
+            },
+            {
+                "plats": [
+                    {
+                        "nom": "Plat du Jour",
+                        "point": 4,
+                        "plat": [
+                            {
+                                "principal": [
+                                    "idPrincipal2",
+                                    "idPrincipal5"
+                                ],
+                                "accompagnement": [
+                                    "idAccompagnement1",
+                                    "idAccompagnement4"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nom": "Grillades",
+                        "point": 4,
+                        "plat": [
+                            {
+                                "principal": [
+                                    "idPrincipal6",
+                                    "idPrincipal4"
+                                ],
+                                "accompagnement": [
+                                    "idAccompagnement3",
+                                    "idAccompagnement5"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nom": "Pizza",
+                        "point": 5,
+                        "plat": [
+                            {
+                                "principal": [],
+                                "accompagnement": []
+                            }
+                        ]
+                    },
+                    {
+                        "nom": "Pâtes",
+                        "point": 4,
+                        "plat": [
+                            {
+                                "principal": [],
+                                "accompagnement": []
+                            }
+                        ]
+                    },
+                    {
+                        "nom": "Plat Végétarien",
+                        "point": 4,
+                        "plat": [
+                            {
+                                "principal": [
+                                    "idPrincipal10"
+                                ],
+                                "accompagnement": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "dessert": [
+                    "idDessert1",
+                    "idDessert3",
+                    "idDessert4"
+                ]
+            }
+        ]
+    },
+    "produit":
+    {
+        "entree": [
+            {
+                "id": "idEntree1",
+                "nom": "Salade Verte"
+            },
+            {
+                "id": "idEntree2",
+                "nom": "Soupe de Légumes"
+            },
+            {
+                "id": "idEntree3",
+                "nom": "Carpaccio de Tomates"
+            },
+            {
+                "id": "idEntree4",
+                "nom": "Oeuf Mimosa"
+            },
+            {
+                "id": "idEntree5",
+                "nom": "Terrine de Poisson"
+            },
+            {
+                "id": "idEntree6",
+                "nom": "Salade César"
+            },
+            {
+                "id": "idEntree7",
+                "nom": "Bruschetta"
+            }
+        ],
+        "principal": [
+            {
+                "id": "idPrincipal1",
+                "nom": "Mergez",
+                "mix": true
+            },
+            {
+                "id": "idPrincipal2",
+                "nom": "Boulettes",
+                "mix": true
+            },
+            {
+                "id": "idPrincipal3",
+                "nom": "Lasagnes",
+                "mix": false
+            },
+            {
+                "id": "idPrincipal4",
+                "nom": "Côte de Porc",
+                "mix": false
+            },
+            {
+                "id": "idPrincipal5",
+                "nom": "Saumon Grillé",
+                "mix": true
+            },
+            {
+                "id": "idPrincipal6",
+                "nom": "Steak Haché",
+                "mix": false
+            },
+            {
+                "id": "idPrincipal7",
+                "nom": "Pizza Margherita",
+                "mix": false
+            },
+            {
+                "id": "idPrincipal8",
+                "nom": "Pâtes Carbonara",
+                "mix": false
+            },
+            {
+                "id": "idPrincipal9",
+                "nom": "Tofu Sauté",
+                "mix": false
+            },
+            {
+                "id": "idPrincipal10",
+                "nom": "Curry de Légumes",
+                "mix": false
+            },
+            {
+                "id": "idPrincipal11",
+                "nom": "Quiche aux Épinards",
+                "mix": false
+            },
+            {
+                "id": "idPrincipal12",
+                "nom": "Pizza Chèvre Miel",
+                "mix": false
+            },
+            {
+                "id": "idPrincipal13",
+                "nom": "Pâtes Bolognaise",
+                "mix": false
+            }
+        ],
+        "accompagnement": [
+            {
+                "id": "idAccompagnement1",
+                "nom": "Riz"
+            },
+            {
+                "id": "idAccompagnement2",
+                "nom": "Gratin Dauphinois"
+            },
+            {
+                "id": "idAccompagnement3",
+                "nom": "Frites"
+            },
+            {
+                "id": "idAccompagnement4",
+                "nom": "Purée de Pommes de Terre"
+            },
+            {
+                "id": "idAccompagnement5",
+                "nom": "Haricots Verts"
+            },
+            {
+                "id": "idAccompagnement6",
+                "nom": "Salade Mixte"
+            }
+        ],
+        "dessert": [
+            {
+                "id": "idDessert1",
+                "nom": "Tarte aux Pommes",
+                "point": 3
+            },
+            {
+                "id": "idDessert2",
+                "nom": "Mousse au Chocolat",
+                "point": 1
+            },
+            {
+                "id": "idDessert3",
+                "nom": "Crème Brûlée",
+                "point": 1
+            },
+            {
+                "id": "idDessert4",
+                "nom": "Salade de Fruits",
+                "point": 2
+            },
+            {
+                "id": "idDessert5",
+                "nom": "Éclair au Café",
+                "point": 1
+            }
+        ],
+        "boisson": [
+            {
+                "id": "idBoisson1",
+                "nom": "Coca Cola",
+                "prix": 1.30
+            },
+            {
+                "id": "idBoisson2",
+                "nom": "Coca Cola Zero",
+                "prix": 1.40
+            },
+            {
+                "id": "idBoisson3",
+                "nom": "Ice Tea",
+                "prix": 1.20
+            },
+            {
+                "id": "idBoisson4",
+                "nom": "Sprite",
+                "prix": 1.10
+            },
+            {
+                "id": "idBoisson5",
+                "nom": "Orangina",
+                "prix": 1.05
+            }
+        ]
+    }
+}
