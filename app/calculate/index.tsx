@@ -131,16 +131,19 @@ function EditContent() {
                 ))}
               </View>
             ))}
-            <Text style={styles.categoryTitle}>Boissons</Text>
-            <Boissons
-              handleSelect={handleSelect}
-              select={selectedItems}
-              boissons={(produits.boisson as { id: string; nom: string; prix: number }[]).map((item) => ({
-                id: item.id,
-                nom: item.nom,
-                prix: item.prix,
-              }))}
-            />
+            <View style={styles.boissonSection}>
+              <Text style={styles.boissonTitle}>Boissons</Text>
+                <Boissons
+                    handleSelect={handleSelect}
+                    select={selectedItems}
+                    boissons={(produits.boisson as { id: string; nom: string; prix: number }[]).map((item) => ({
+                      id: item.id,
+                      nom: item.nom,
+                      prix: item.prix,
+                    }))}
+                />
+            </View>
+
           </>
         )}
       </ScrollView>
@@ -168,8 +171,10 @@ function EditContent() {
 const styles = StyleSheet.create({
   container: { backgroundColor: "#f8f8f8", paddingHorizontal: 15, paddingTop: 20 },
   menuSection: { marginBottom: 20, padding: 10, backgroundColor: "#fff", borderRadius: 8, shadowColor: "#000", shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.1, shadowRadius: 4, elevation: 3 },
-  categorySection: { marginBottom: 15, padding: 10, borderRadius: 6, backgroundColor: "#f0f0f0", shadowColor: "#000", shadowOffset: { width: 0, height: 1 }, shadowOpacity: 0.1, shadowRadius: 2, elevation: 2 },
+  categorySection: { marginBottom: 5, padding: 10, borderRadius: 6, backgroundColor: "#f0f0f0", shadowColor: "#000", shadowOffset: { width: 0, height: 1 }, shadowOpacity: 0.1, shadowRadius: 2, elevation: 2 },
   categoryTitle: { fontWeight: "bold", fontSize: 18, color: "#DE0410", marginBottom: 10 },
+  boissonSection: { marginBottom: 35, padding: 10, borderRadius: 6, backgroundColor: "#f0f0f0", shadowColor: "#000", shadowOffset: { width: 0, height: 1 }, shadowOpacity: 0.1, shadowRadius: 2, elevation: 2 },
+  boissonTitle: { fontWeight: "bold", fontSize: 18, color: "#000", marginBottom: 10 },
   footer: { padding: 15, backgroundColor: "#fefeff", alignItems: "center", borderWidth: 2, borderColor: "#dcdcdc" },
   footerText: { fontSize: 18, fontWeight: "bold", color: "black" },
   switchContainer: {
