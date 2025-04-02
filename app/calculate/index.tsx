@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, StyleSheet, ScrollView, CheckBox } from "react-native";
+import { Text, View, StyleSheet, ScrollView, Switch } from "react-native";
 import data from "../data/datas.json";
 import Entrees from "../components/Entrees";
 import Plats from "../components/Plats";
@@ -138,14 +138,18 @@ export default function Edit() {
         <Text style={styles.footerText}>
           Total Points : {points} | Total Prix : {prix} €
         </Text>
-        <View style={styles.checkboxContainer}>
-          <Text style={styles.checkboxText}>Êtes-vous boursier ?</Text>
-          <CheckBox
-            value={isBoursier}
-            onValueChange={setIsBoursier}
-            style={styles.checkbox}
+
+        <View style={styles.switchContainer}>
+          <Text style={styles.switchText}>Êtes-vous boursier ?</Text>
+          <Switch
+              value={isBoursier}
+              onValueChange={setIsBoursier}
+              trackColor={{ false: "#ccc", true: "#00796b" }}
+              thumbColor={isBoursier ? "#fff" : "#888"}
+              ios_backgroundColor="#ccc"
           />
         </View>
+
       </View>
     </>
   );
@@ -158,17 +162,16 @@ const styles = StyleSheet.create({
   categoryTitle: { fontWeight: "bold", fontSize: 18, color: "#DE0410", marginBottom: 10 },
   footer: { padding: 15, backgroundColor: "#fefeff", alignItems: "center", borderWidth: 2, borderColor: "#dcdcdc" },
   footerText: { fontSize: 18, fontWeight: "bold", color: "black" },
-  checkboxContainer: {
+  switchContainer: {
     flexDirection: "row",
     alignItems: "center",
-    marginTop: 10,
+    marginTop: 10
   },
-  checkboxText: {
+
+  switchText: {
     fontSize: 16,
     marginRight: 10,
+    fontWeight: "bold",
     color: "#333",
-  },
-  checkbox: {
-    alignSelf: "center",
   }
 });
