@@ -7,6 +7,7 @@ import Desserts from "../components/Desserts";
 import Boissons from "../components/Boissons";
 import { useState } from "react";
 import { useDate } from "../context/Context";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 const produits = data.produit;
 type ProductCategory = keyof typeof produits;
@@ -16,6 +17,14 @@ const getProductName = (category: ProductCategory, id: string) => {
 };
 
 export default function Edit() {
+  return (
+    <GestureHandlerRootView>
+      <EditContent />
+    </GestureHandlerRootView>
+  );
+}
+
+function EditContent() {
   let [selectedItems, setSelectedItems] = useState<string[]>([]);
   const [isBoursier, setIsBoursier] = useState<boolean>(false);
 
