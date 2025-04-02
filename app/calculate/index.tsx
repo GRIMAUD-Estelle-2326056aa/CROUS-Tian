@@ -82,8 +82,9 @@ function EditContent() {
                   <View key={categoryIndex} style={styles.categorySection}>
                     <Text style={styles.categoryTitle}>{category.toUpperCase()}</Text>
                     {(category === "entree") ? (
-                      (items as { choix: string[]; point: number }[]).map((item) => (
+                      (items as { choix: string[]; point: number }[]).map((item, entreeIndex) => (
                         <Entrees
+                          key={entreeIndex}
                           handleSelect={handleSelect}
                           select={selectedItems}
                           entrees={item.choix.map((id: string) => ({
